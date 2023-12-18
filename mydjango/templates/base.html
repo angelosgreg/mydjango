@@ -9,6 +9,10 @@
         <title>Document</title>
     </head>
     <body>
+      <div>
+        <a class="button" href='{% url "index" %}'>All tasks</a>
+        <a class="button" href='{% url "today" %}'>Today</a>
+    </div>
         {% block content %}{% endblock %}
     </body>
 </html>
